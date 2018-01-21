@@ -1,0 +1,55 @@
+/*---------------------------------------------------------------------------*/
+/*Defuat styles*/
+
+html{
+  font-family: "Helvetica", sans-serif;
+  font-size: 18px;
+  color: White;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Main styles*/
+
+h1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.textBox{
+  background-color: Black;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Header styles*/
+
+header{
+  background-color: Black;
+  font-size: 1rem;
+}
+
+.banner{
+  background-image: url("./../images/moto.jpeg");
+}
+
+nav{
+  background-color: Firebrick;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Content styles*/
+
+.productName{
+  text-align: center;
+}
+
+/*---------------------------------------------------------------------------*/
+/*Footer styles*/
+
+footer{
+  background-color: Black;
+}
