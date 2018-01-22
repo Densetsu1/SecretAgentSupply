@@ -154,8 +154,11 @@ footer{
   margin-top: 4rem;
 }
 
+/*---------------------------------------------------------------------------*/
+/*Styles for screens smaller than 1024px*/
 @media only screen and (max-width: 1024px){
   /*Header styles*/
+
   /*The desktop-nav is to much forsmaller screens so we will now hide it*/
   #desktop-nav{
     display: none;
@@ -166,7 +169,9 @@ footer{
     text-align: center;
   }
 
-  /*Product styles*/
+  /*-------------------------------------------------------------------------*/
+  /*Contents styles*/
+
   /*We will nowreduce the number of products and remove the glasses*/
   #glasses{
     display: none;
@@ -176,5 +181,72 @@ footer{
   the space*/
   .product{
     width: 47%;
+  }
+}
+
+/*---------------------------------------------------------------------------*/
+/*Styles for screens smaller than 470px*/
+@media only screen and (max-width: 470px){
+  /*Header styles*/
+
+  /*We will reduce the sizeof the banner*/
+  .banner{
+    height: 15rem;
+  }
+
+  /*We need to reposition the text box to the bottom of the banner and makeit
+  the full width*/
+  .banner .textBox{
+      width: 100%;
+      padding: 1rem 2rem;
+      top: 10rem;
+  }
+
+  /*The text sizes will need to be reduced */
+  h1{
+    font-size: 1rem;
+  }
+
+  h2{
+    font-size: 0.77rem;
+  }
+
+
+  /*-------------------------------------------------------------------------*/
+  /*Contents styles*/
+
+  /*With the screen even smaller we will further reduce the number of products
+  to only 1*/
+  #watch{
+    display: none;
+  }
+
+  /*With there only being 1product we will adjust the width again to accomodate
+  the smace to 90%*/
+  .product{
+    width: 90%;
+  }
+
+  /*With there being only 1item we wil want it centered and not aligned at the
+  left therefore we will alter the justify-content to centre the products*/
+  .products{
+    justify-content: center;
+  }
+
+  /*We willnow needto stack the stores info and centre due to reduced space*/
+  .store{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /*With the info stacked there is more open space so we will adjust the widths
+  to accomodate the space*/
+  .info{
+    width: 90%;
+    margin-top: 0.5rem;
+  }
+
+  footer{
+    text-align: center;
   }
 }
