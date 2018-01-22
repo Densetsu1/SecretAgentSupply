@@ -189,6 +189,14 @@ footer{
 @media only screen and (max-width: 470px){
   /*Header styles*/
 
+  .company span{
+    display: none;
+  }
+
+  .company{
+    justify-content: center;
+  }
+
   /*We will reduce the sizeof the banner*/
   .banner{
     height: 15rem;
