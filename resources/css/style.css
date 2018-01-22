@@ -26,7 +26,8 @@ h2{
 }
 
 .container{
-  width: 960px;
+  /*Changed to max width so its no bigger but may reduce*/
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -79,9 +80,10 @@ nav{
 
 ul{
   display: flex;
+  /*Align-items so that they are centre verticaly aswell*/
+  align-items: center;
   justify-content: space-between;
   padding: 0.75rem 0;
-  list-style: none;
 }
 
 /*---------------------------------------------------------------------------*/
@@ -108,7 +110,11 @@ ul{
 }
 
 .product img{
-  height: 9rem;
+  /*As the images overflow due to size max width has been set (glasses width is
+  greater than height). If we take the width of the container to be similar to
+  the height then width can be no larger than height therefore maxwidth will be
+  set to 9rem*/
+  max-width: 9rem;
   padding: 2rem 0;
 }
 
@@ -134,9 +140,11 @@ ul{
 /*Footer styles*/
 
 footer{
-  display: flex;
-  align-items: center;
   background-color: Black;
-  height: 5rem;
+  /*The spec states 5rem height but does not corrospond to the final product
+  shown. therefore the height will be commented out and will be replaced with
+  padding of 5rem top and bottom note as stated but as illistrated*/
+  /*height: 5rem;*/
+  padding: 5rem 0;
   margin-top: 4rem;
 }
