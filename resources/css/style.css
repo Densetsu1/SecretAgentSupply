@@ -86,6 +86,11 @@ ul{
   padding: 0.75rem 0;
 }
 
+/*We will hide the mobile nav display from the start*/
+#mobile-nav{
+  display: none;
+}
+
 /*---------------------------------------------------------------------------*/
 /*Content styles*/
 .products,
@@ -147,4 +152,29 @@ footer{
   /*height: 5rem;*/
   padding: 5rem 0;
   margin-top: 4rem;
+}
+
+@media only screen and (max-width: 1024px){
+  /*Header styles*/
+  /*The desktop-nav is to much forsmaller screens so we will now hide it*/
+  #desktop-nav{
+    display: none;
+  }
+  /*We will now bring the mobile-nav to view and have it centered*/
+  #mobile-nav{
+    display: block;
+    text-align: center;
+  }
+
+  /*Product styles*/
+  /*We will nowreduce the number of products and remove the glasses*/
+  #glasses{
+    display: none;
+  }
+
+  /*Now there is only two products we will increase the widths to accomodate
+  the space*/
+  .product{
+    width: 47%;
+  }
 }
